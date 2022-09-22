@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class AppleTreeScript : MonoBehaviour
@@ -15,7 +16,13 @@ public class AppleTreeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("DropApple", 2f);
+    }
+
+    void DropApple() {
+        GameObject apple = Instantiate<GameObject>(applePrefab);
+        apple.transform.position = transform.position;
+        Invoke("DropApple", secondsBetweenAppleDrops);
     }
 
     // Update is called once per frame
@@ -29,9 +36,19 @@ public class AppleTreeScript : MonoBehaviour
         {
             speed = Mathf.Abs(speed);
         }
-        else if (pos.x > leftAndRightEdge) { 
-            speed = -Mathf.Abs(speed);  
+        else if (pos.x > leftAndRightEdge)
+        {
+            speed = -Mathf.Abs(speed);
         }
+        
 
+    }
+
+    private void FixedUpdate()
+    { 
+        if (Random.value < chanceToChangeDirections)
+        {
+            speed *= -1;
+        }
     }
 }
