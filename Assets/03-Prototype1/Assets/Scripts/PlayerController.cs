@@ -223,7 +223,7 @@ public class PlayerController : MonoBehaviour
             target.gameObject.SetActive(false);
             create_Node_At_Tail = true;
 
-           //GameplayController.instance.IncreaseScore();
+           GameplayController.instance.IncreaseScore();
           // AudioManager.instance.Play_PickUpSound();
         }
 
