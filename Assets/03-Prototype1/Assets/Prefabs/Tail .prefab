@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3132365496452828888}
   m_Layer: 0
   m_Name: 'Tail '
-  m_TagString: Untagged
+  m_TagString: Tail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.0000005
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0.0000005066396, z: -1.2079228e-13}
 --- !u!54 &3132365496452828888
 Rigidbody:

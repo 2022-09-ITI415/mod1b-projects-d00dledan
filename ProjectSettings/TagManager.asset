@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Fruit
   - Bomb
+  - Tail
   layers:
   - Default
   - TransparentFX

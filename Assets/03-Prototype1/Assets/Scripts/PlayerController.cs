@@ -224,13 +224,13 @@ public class PlayerController : MonoBehaviour
             create_Node_At_Tail = true;
 
            GameplayController.instance.IncreaseScore();
-          // AudioManager.instance.Play_PickUpSound();
+           AudioManager.instance.Play_PickUpSound();
         }
 
         if (target.tag == Tags.WALL || target.tag == Tags.BOMB || target.tag == Tags.TAIL)
         {
             Time.timeScale = 0f;
-            //AudioManager.instance.Play_DeadSound();
+            AudioManager.instance.Play_DeadSound();
         }
     }
 }
