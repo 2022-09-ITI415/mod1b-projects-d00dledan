@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00-Scenes/Main-MissionDemolition.unity
     guid: 36a4f7af764a74bfab5a5ff20375bcdb
-  - enabled: 0
+  - enabled: 1
     path: Assets/00-Scenes/Main-Prototype 1.unity
     guid: 84930580229bb4f138179e160aab9b89
   m_configObjects: {}
