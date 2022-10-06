@@ -37,8 +37,7 @@ public class PlayerInput : MonoBehaviour
     void GetKeyboardInput()
     {
 
-        //horizontal = (int)Input.GetAxisRaw("Horizontal");
-        //vertical = (int)Input.GetAxisRaw("Vertical");
+ 
 
         horizontal = GetAxisRaw(Axis.Horizontal);
         vertical = GetAxisRaw(Axis.Vertical);
